@@ -22,14 +22,15 @@ inpo[13]="bot: 😪 Hari-hari commit :("
 rand=$[$RANDOM % ${#inpo[@]}]
 
 # time formatting
-d=`date '⌚ %H:%M:%S WIB 📅 %d/%m/%Y'`
+jam=`date '%H:%M:%S'`
+tanggal=`date '%d/%m/%Y'`
 
 # update.md content
 echo "---
-### 😬 LAST UPDATED AT: `${d}`
+### 😬 LAST UPDATED AT: `⌚ ${jam} WIB 📅 ${tanggal}`
 ---" > update.md
 
 # run command
 git config --local user.email "mrclfd@yahoo.com" # change to your github account email
 git config --local user.name "mrclfd" # change to your github account username
-git commit -am "${inpo[$rand]} `${d}`"
+git commit -am "${inpo[$rand]} `⌚ ${jam} WIB 📅 ${tanggal}`"
