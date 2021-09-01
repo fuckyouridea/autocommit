@@ -7,7 +7,7 @@ on:
       
   schedule:
     # Run Auto Commit every 13 minute(s)
-    - cron: "*/60 * * * *"
+    - cron: "*/13 * * * *"
 
 jobs:
   auto-commit:
