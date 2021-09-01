@@ -1,1 +1,1 @@
-<h2 align=center>😬 LAST UPDATED AT: ⌚ `${jam} WIB` 📅 `${tanggal}`</h2></h2>
+<h2 align=center>😬 LAST UPDATED AT: ⌚ `${jam} WIB` 📅 <b>${tanggal}</b></h2></h2>
