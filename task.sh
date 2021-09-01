@@ -26,6 +26,6 @@ d=`date '%H:%M:%S WIB - %ddd, %d %MMM %Y'`
 
 echo "<h3 align="center">`😬 LAST UPDATED AT: ${d}`</h3>" > update.md
 
-git config --local user.email "${{ secrets.GITHUB_EMAIL }}"
-git config --local user.name "${{ secrets.GITHUB_USERNAME }}"
+git config --local user.email "${{ secrets.GH_EMAIL }}"
+git config --local user.name "${{ secrets.GH_USERNAME }}"
 git commit -am "${inpo[$rand]} (at ${d})"
