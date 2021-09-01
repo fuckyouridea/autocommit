@@ -24,7 +24,7 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 d=`date '+%H:%M:%S WIB - %ddd, %d %MMM %Y'`
 
-echo """<h3 align="center">`😬 LAST UPDATED AT: ${d}`</h3>""" > update.md
+echo "###`😬 LAST UPDATED AT: ${d}`" > update.md
 
 git config --local user.email "mrclfd@yahoo.com"
 git config --local user.name "mrclfd"
