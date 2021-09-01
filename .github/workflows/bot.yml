@@ -8,7 +8,7 @@ on:
   schedule:
     # Run Auto Commit every 1 minute(s)
     - cron: "1 * * * *"
-    
+
 jobs:
   auto-commit:
     runs-on: ubuntu-latest
