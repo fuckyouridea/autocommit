@@ -26,9 +26,7 @@ jam=`date '+%H:%M:%S'`
 tanggal=`date '+%d/%m/%Y'`
 
 # update.md content
-echo "---
-### 😬 LAST UPDATED AT: ⌚ ${jam} WIB 📅 ${tanggal}
----" > update.md
+echo "<h1 align="center">😬 LAST UPDATED AT: ⌚ ${jam} WIB 📅 ${tanggal}</h1>" > update.md
 
 # run command
 git config --local user.email "mrclfd@yahoo.com" # change to your github account email
