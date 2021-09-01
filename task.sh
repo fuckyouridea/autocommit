@@ -26,9 +26,9 @@ jam=`date '+%H:%M:%S'`
 tanggal=`date '+%d/%m/%Y'`
 
 # update.md content
-echo "<h3 align="center">😬 LAST UPDATED AT: ⌚ ${jam} WIB 📅 ${tanggal}</h3>" > update.md
+echo "<h3 align="center">😬 LAST UPDATED AT: ⌚ '`${jam} WIB`' 📅 '`${tanggal}`'</h3>" > update.md
 
 # run command
 git config --local user.email "mrclfd@yahoo.com" # change to your github account email
 git config --local user.name "mrclfd" # change to your github account username
-git commit -am "${inpo[$rand]} ⌚ ${jam} WIB 📅 ${tanggal}"
+git commit -am "${inpo[$rand]} ⌚ '`${jam} WIB`' 📅 '`${tanggal}`'"
