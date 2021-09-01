@@ -1,4 +1,4 @@
-name: Mengcommit Nih Ngab
+name: Auto Commit
 
 on:
   push:
