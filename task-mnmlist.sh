@@ -29,7 +29,7 @@ tanggal=`date '+%d/%m/%Y'`
 ## update.md content
 echo "<h2 align="center">😬 TERAKHIR DIPERBARUI: ⌚ <code>${jam} WIB</code> 📅 <code>${tanggal}</code></h2>" > update.md
 
-## run command
+## execute command
 git config --local user.email "mrclfd@yahoo.com" # change to your github account email
 git config --local user.name "mrclfd" # change to your github account username
 #ori git commit -am "${inpo[$rand]} \`⌚ ${jam} WIB 📅 ${tanggal}\`"
