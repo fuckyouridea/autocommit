@@ -1,4 +1,4 @@
-name: Auto Commit
+name: Auto Commit 2
 
 on:
   push:
