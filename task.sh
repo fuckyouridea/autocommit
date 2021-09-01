@@ -22,10 +22,10 @@ rand=$[$RANDOM % ${#inpo[@]}]
 # Set timezone to Asia/Jakarta WIB
 sudo ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
-d=`date '%H:%M:%S WIB - %ddd, %d %MMM %Y'`
+d=`date '+%H:%M:%S WIB - %ddd, %d %MMM %Y'`
 
-echo "<h3 align="center">`😬 LAST UPDATED AT: ${d}`</h3>" > update.md
+echo """<h3 align="center">`😬 LAST UPDATED AT: ${d}`</h3>""" > update.md
 
-git config --local user.email "${{ secrets.GH_EMAIL }}"
-git config --local user.name "${{ secrets.GH_USERNAME }}"
+git config --local user.email "mrclfd@yahoo.com"
+git config --local user.name "mrclfd"
 git commit -am "${inpo[$rand]} (at ${d})"
