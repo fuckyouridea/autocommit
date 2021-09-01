@@ -18,6 +18,7 @@ inpo[10]="bot: 😪 Pegel tenan"
 inpo[11]="bot: 😋 Mbak Anya, Aku padamuuu"
 inpo[12]="bot: 😂 Joss"
 inpo[13]="bot: 😪 Hari-hari commit :("
+inpo[13]="bot: 😎 GG Gaming Gak Guys?!"
 
 rand=$[$RANDOM % ${#inpo[@]}]
 
