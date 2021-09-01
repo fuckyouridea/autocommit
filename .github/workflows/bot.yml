@@ -1,4 +1,4 @@
-name: Auto Commit 2
+name: Auto Commit
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
           ./task.sh
           
       - name: GitHub Push
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@v0.6.0
         with:
           force: true
           directory: "."
