@@ -3,7 +3,7 @@ name: Auto Commit
 on:
   push:
     branches:
-      - main
+      - master
       
   schedule:
     # Run Auto Commit every 13 minute(s)
