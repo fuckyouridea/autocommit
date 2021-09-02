@@ -1,4 +1,4 @@
-name: Auto Commit
+name: Auto Commit Nih Ngab
 
 on:
   push:
@@ -6,7 +6,8 @@ on:
       - master
       
   schedule:
-    - cron: "*/20 * * * *"
+    # Run Auto Commit every half hour.
+    - cron: "*/30 * * * *"
 
 jobs:
   auto-commit:
@@ -27,7 +28,7 @@ jobs:
         with:
           force: true
           directory: "."
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN  }}
           
       - name: send telegram message (action notifier bot)
         run: |
