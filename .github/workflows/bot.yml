@@ -6,8 +6,8 @@ on:
       - master
       
   schedule:
-    # run auto commit every 30th minute past every hour from 0 through 23.
-    - cron: "*/30 0-23 * * *"
+    # run auto commit “At every 30th minute past hour 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, and 23.”
+    - cron: "*/30 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * *"
 
 jobs:
   auto-commit:
