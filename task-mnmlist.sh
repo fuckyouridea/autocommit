@@ -37,4 +37,4 @@ echo "<h2 align="center">✨ LAST UPDATED: ⌚ <code>${jam} WIB</code> 📅 <cod
 ## execute command
 git config --local user.email "mrclfd@yahoo.com" # change to your github account email
 git config --local user.name "mrclfd" # change to your github account username
-git commit -am "bot: \`${emoji[$acak]}\` ⌚ ${jam} WIB 📅 ${tanggal}"
+git commit -am "bot: \`${emoji[$acak]}\` ${jam} WIB ${tanggal}"
