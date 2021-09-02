@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
           
       - name: Run Bot Task
-        run: | # change task-*.sh default is task-ori.sh
+        run: | # change task-*.sh, default is task-ori.sh
           chmod +x ./task-mnmlist.sh
           ./task-mnmlist.sh
           
