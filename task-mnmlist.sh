@@ -18,7 +18,12 @@ emoji[10]="👍"
 emoji[11]="🎉"
 emoji[12]="♠"
 emoji[13]="🗿"
-emoji[13]="🍃"
+emoji[14]="🍃"
+emoji[15]="👿"
+emoji[16]="💩"
+emoji[17]="😱"
+emoji[18]="🚀"
+emoji[19]="🙏"
 
 acak=$[$RANDOM % ${#emoji[@]}]
 
@@ -32,5 +37,4 @@ echo "<h2 align="center">✨ LAST UPDATED: ⌚ <code>${jam} WIB</code> 📅 <cod
 ## execute command
 git config --local user.email "mrclfd@yahoo.com" # change to your github account email
 git config --local user.name "mrclfd" # change to your github account username
-#ori git commit -am "${inpo[$rand]} \`⌚ ${jam} WIB 📅 ${tanggal}\`"
-git commit -am "bot: ${emoji[$acak]} \`⌚ ${jam} WIB 📅 ${tanggal}\`"
+git commit -am "bot: \`${emoji[$acak]}\` ⌚ ${jam} WIB 📅 ${tanggal}"
