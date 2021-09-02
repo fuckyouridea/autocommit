@@ -1,4 +1,4 @@
-<h1><code>Auto Commit</code></h1>
+<h1>Auto Commit</h1>
 
 ## [![Auto Commit](https://github.com/fuckyouridea/autocommit/actions/workflows/bot.yml/badge.svg)](https://github.com/fuckyouridea/autocommit/actions/workflows/bot.yml)
 
