@@ -1,6 +1,6 @@
 <h1>Auto Commit</h1>
 
-## [![Auto Commit](https://github.com/fuckyouridea/autocommit/actions/workflows/bot.yml/badge.svg)](https://github.com/fuckyouridea/autocommit/actions/workflows/bot.yml)
+[![Auto Commit](https://github.com/fuckyouridea/autocommit/actions/workflows/bot.yml/badge.svg)](https://github.com/fuckyouridea/autocommit/actions/workflows/bot.yml)
 
 A bot that can make your Github stats green with scheduled auto commit.
 
