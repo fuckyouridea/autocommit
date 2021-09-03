@@ -5,12 +5,6 @@ on:
     branches:
       - master
       
-      # Set Timezone
-      - name: Set Timezone
-        uses: szenius/set-timezone@v1.0
-        with:
-          timezoneLinux: "Asia/Jakarta"      
-      
   schedule:
     # run auto commit time
     - cron: "0,30 * * * *"
@@ -23,6 +17,12 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+          
+      # Set Timezone
+      - name: Set Timezone
+        uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Jakarta"
           
       - name: Run Bot Task
         run: | # change task-*.sh, default is task-ori.sh
