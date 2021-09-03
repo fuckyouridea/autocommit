@@ -5,6 +5,12 @@ on:
     branches:
       - master
       
+      # Set Timezone
+      - name: Set Timezone
+        uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Jakarta"      
+      
   schedule:
     # run auto commit time
     - cron: "5,10,15,20,25,30,35,40,45,50,55 * * * *"
