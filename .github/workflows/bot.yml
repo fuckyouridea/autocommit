@@ -7,7 +7,7 @@ on:
       
   schedule:
     # run auto commit time
-    - cron: "0,30 * * * *"
+    - cron: "0 0-23 * * *"
 
 jobs:
   auto-commit:
@@ -23,6 +23,8 @@ jobs:
         uses: szenius/set-timezone@v1.0
         with:
           timezoneLinux: "Asia/Jakarta"
+          timezoneMacos: "Asia/Jakarta"
+          timezoneWindows: "Jakarta"
           
       - name: Run Bot Task
         run: | # change task-*.sh, default is task-ori.sh
@@ -36,7 +38,7 @@ jobs:
           directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN  }}
           
-      - name: send telegram message (action notifier bot)
+      - name: Send Notification # action notifier by telegram bot
         run: |
             function sendTG() {
             curl -s "https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendmessage" --data "text=${*}&chat_id=${{ secrets.TG_CHAT_ID }}&parse_mode=Markdown"
